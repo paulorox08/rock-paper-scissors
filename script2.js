@@ -10,7 +10,7 @@ function computerPlay() {
 }
 
 let playerSelection = playerPlay()
-let computerSelection = computerPlay ()
+let computerSelection = computerPlay()
 
 function singleRound(playerSelection, computerSelection) {
 
@@ -44,3 +44,5 @@ for (let i = 0; i < 5; i ++) {
     let computerSelection = computerPlay()
     console.log(singleRound(playerSelection, computerSelection))
 }
+
+
