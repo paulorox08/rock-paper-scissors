@@ -91,17 +91,35 @@ function buttonOperation() {
 
 };
 
+buttonOperation();
 
 function gameOver() {
     let compRead = document.querySelector('.compScore').textContent;
 
     let playaRead = document.querySelector('.playaScore').textContent;
 
-    if (compRead == 5 || playaRead == 5) {
-         results.textContent = "";
-    };
-};
+    if (compRead == 5) {
+         alert("You lost! The computer beat your ass!");
+         while (results.lastElementChild) {
+             results.removeChild(results.lastElementChild);
+         }
+        computerScore.textContent = (0);
+        cScore.appendChild(computerScore);
 
-buttonOperation();
+        playerScore.textContent = (0);
+        pScore.appendChild(playerScore);
+    }
+    else if (playaRead == 5) {
+        alert("You won! You beat the computer's ass!");
+        while (results.lastElementChild) {
+            results.removeChild(results.lastElementChild);
+        }
+       computerScore.textContent = (0);
+       cScore.appendChild(computerScore);
+
+       playerScore.textContent = (0);
+       pScore.appendChild(playerScore);
+    }
+};
 
 
