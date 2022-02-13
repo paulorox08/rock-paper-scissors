@@ -8,27 +8,59 @@
     </head>
 
     <body>
-        <div id = "header">
-            Rock Paper Scissors
-        </div>
-        <div>
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
+        <div id="header">
+            <h1 id="headerText">Rock Paper Scissors</h1>
+            <div id="subText">by Paulo Adeva</div>
         </div>
 
-        <div id="computerScore">Computer Score</div>
+        <div id="scores">
+            <div id="computerScore">
+                <img src = "comp.png" alt = "a computer">
+                <div id = "compText">
+                    Computer Score
+                </div>
+            </div>
+        
+            <div id="playerScore">
+                <img src = "person.png" alt = "a person">
+                <div id = "playerText">
+                    Player Score
+                </div>
+            </div>
+        </div>
 
-        <div id="playerScore">Player Score</div>
+        <div id="options">
+            
+            <div class="choice rockContainer">
+                <button id="rock">ROCK</button>
+            </div>
+            
+            <div class="choice paperContainer">
+                <button id="paper">PAPER</button>
+            </div>
+
+            <div class="choice scissorsContainer">
+                <button id="scissors">SCISSORS</button>
+            </div>
+
+        </div>
 
         <div id="results">Results</div>
 
-        <div>
-            <button id="refresh">Play Again</button>
+        <div id="resultsMessage"> </div>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <button id="refresh">START OVER</button>
+            </div>  
+          
         </div>
 
-        <div id = "footer">
-            Copyright 
+        <div id = "footerContainer">
+            <div id="footerText">
+                Copyright Ⓒ Paulo Adeva 2022
+            </div>
         </div>
     </body>
 </html>
