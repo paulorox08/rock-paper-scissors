@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: lightgray;
+    background-color: #242424;
+    color: white;
 }
 
 #header {
     padding: 20px;
-    background-color: #1F2937;
+    /* background-color: #1F2937; */
+    background-color: black;
     color: white;
 }
 
@@ -23,12 +27,13 @@ h1, #subText {
 }
 
 #footerContainer {
-    background-color: #1F2937;
+    background-color: black;
     color: white;
     position: fixed;
     padding: 15px;
     bottom: 0;
     width: 100%;
+    font-size: 13px;
 }
 
 /* Adding some spice to the interface */
@@ -48,12 +53,13 @@ h1, #subText {
     color: white;
     font-weight: bolder;
     font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #rock {
     background:url(rock2.png) no-repeat;
     border: 5px solid white;
-    background-color: #3882F6;
+    background-color: black;
     background-size: 60%;
     width: 250px;
     height: 250px;
@@ -65,9 +71,9 @@ h1, #subText {
 
 #rock:hover {
     background:url(rock2.png) no-repeat;
-    border: 5px solid #3882F6;
+    border: 5px solid black;
     background-color: white;
-    color: #3882F6;
+    color: black;
     background-size: 60%;
     width: 250px;
     height: 250px;
@@ -80,7 +86,7 @@ h1, #subText {
 #paper {
     background: url(paper2.png) no-repeat;
     border: 5px solid white;
-    background-color: #3882F6;
+    background-color: black;
     background-size: 65%;
     width: 250px;
     height: 250px;
@@ -92,9 +98,9 @@ h1, #subText {
 
 #paper:hover {
     background: url(paper2.png) no-repeat;
-    border: 5px solid #3882F6;
+    border: 5px solid black;
     background-color: white;
-    color: #3882F6;
+    color: black;
     background-size: 65%;
     width: 250px;
     height: 250px;
@@ -107,7 +113,7 @@ h1, #subText {
 #scissors {
     background: url(scissors2.png) no-repeat;
     border: 5px solid white;
-    background-color: #3882F6;
+    background-color: black;
     background-size: 65%;
     width: 250px;
     height: 250px;
@@ -119,9 +125,9 @@ h1, #subText {
 
 #scissors:hover {
     background: url(scissors2.png) no-repeat;
-    border: 5px solid #3882F6;
+    border: 5px solid black;
     background-color: white;
-    color: #3882F6;
+    color: black;
     background-size: 65%;
     width: 250px;
     height: 250px;
@@ -143,7 +149,7 @@ h1, #subText {
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-    padding-top: 75px;
+    padding-top: 50px;
     font-weight: bold;
 }
 
@@ -151,13 +157,13 @@ h1, #subText {
     align-items: center;
 }
 #computerScore img {
-    width: 100px;
-    height: auto;
+    width: 75px;
+    height: 75px;
 }
 
 #playerScore img {
-    width: 100px;
-    height: auto;
+    width: 38px;
+    height: 75px;
 }
 
 /* Adding stuff to results */
